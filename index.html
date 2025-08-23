@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Hub - Premium Burgers</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-hamburger"></i>
+                Burger Hub
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a></li>
+                    <li><a href="#menu" class="nav-link">
+                            <i class="fas fa-utensils"></i>
+                            Menu
+                        </a></li>
+                    <li><a href="#contact" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            Contact
+                        </a></li>
+                    <li><a href="#location" class="nav-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Location
+                        </a></li>
+                          <li><a href="#reviews" class="nav-link">
+                           ⭐Reviews 
+                        </a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                Premium Quality
+            </div>
+            <h1>Gourmet Burgers <span class="highlight">Delivered Fresh</span></h1>
+            <p>Experience the finest handcrafted burgers made with premium ingredients, locally sourced beef, and artisanal buns delivered hot to your doorstep</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="cta-button primary">
+                    <i class="fas fa-utensils"></i>
+                    Order Now
+                </a>
+                <a href="#about" class="cta-button secondary">
+                    <i class="fas fa-play"></i>
+                    Watch Story
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">30min</div>
+                    <div class="stat-label">Delivery</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Locally sourced, premium quality ingredients in every burger</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Hot and fresh burgers delivered in 30 minutes or less</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Award Winning</h3>
+                    <p>Recognized as the best burger joint in the city</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Signature Menu</h2>
+                <p class="section-subtitle">Discover our collection of gourmet burgers, each crafted with passion and premium ingredients</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="beef">Beef Burgers</button>
+                <button class="category-btn" data-category="chicken">Chicken Burgers</button>
+                <button class="category-btn" data-category="veggie">Veggie Options</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-category="beef">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Classic Cheeseburger">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <h3 class="card-title">Classic Cheeseburger</h3>
+                        <p class="card-description">Juicy beef patty with melted cheese, lettuce, tomato, and our signature sauce</p>
+                        <div class="card-footer">
+                            <div class="card-price">$12.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="beef">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Double Patty Deluxe">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge">Best Seller</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                        <h3 class="card-title">Double Patty Deluxe</h3>
+                        <p class="card-description">Two beef patties, double cheese, crispy bacon, and premium toppings</p>
+                        <div class="card-footer">
+                            <div class="card-price">$18.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="chicken">
+                    <div class="card-image">
+                        <img src="data:image/jpeg;base64,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" alt="Crispy Chicken Burger">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <h3 class="card-title">Crispy Chicken Deluxe</h3>
+                        <p class="card-description">Golden crispy chicken breast with fresh lettuce and tangy mayo</p>
+                        <div class="card-footer">
+                            <div class="card-price">$15.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="beef">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="BBQ Bacon Burger">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge">Spicy</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <h3 class="card-title">BBQ Bacon Supreme</h3>
+                        <p class="card-description">Smoky BBQ sauce, crispy bacon, onion rings, and aged cheddar</p>
+                        <div class="card-footer">
+                            <div class="card-price">$17.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="veggie">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Veggie Supreme">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge">Healthy</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                        <h3 class="card-title">Garden Veggie Supreme</h3>
+                        <p class="card-description">Plant-based patty with avocado, sprouts, and herb aioli</p>
+                        <div class="card-footer">
+                            <div class="card-price">$13.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="beef">
+                    <div class="card-image">
+                        <img src="https://wickedkitchen.com/wp-content/uploads/2022/05/Wicked-jalapeno-burger.jpeg" alt="Spicy Jalapeño Burger">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge">Hot</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <h3 class="card-title">Fiery Jalapeño Heat</h3>
+                        <p class="card-description">Spicy beef patty with jalapeños, pepper jack cheese, and chipotle mayo</p>
+                        <div class="card-footer">
+                            <div class="card-price">$16.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="chicken">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Buffalo Chicken">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <h3 class="card-title">Buffalo Chicken Ranch</h3>
+                        <p class="card-description">Spicy buffalo chicken with ranch dressing and crispy celery</p>
+                        <div class="card-footer">
+                            <div class="card-price">$14.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="veggie">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVLUIGWTEEe1wb-8xLEzERshlTwDOhR9hcw&s" alt="Mushroom Swiss">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <h3 class="card-title">Mushroom Swiss Veggie</h3>
+                        <p class="card-description">Grilled portobello mushroom with Swiss cheese and truffle aioli</p>
+                        <div class="card-footer">
+                            <div class="card-price">$15.99</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Absolutely the best burgers in town! The quality is outstanding and delivery is always on time."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=150&q=80" alt="Customer">
+                        <div class="author-info">
+                            <div class="author-name">John Smith</div>
+                            <div class="author-title">Regular Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Fresh ingredients, amazing flavors, and the customer service is top-notch. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://www.dukehealth.org/sites/default/files/styles/doctor_profile/public/physician/sarah-r-johnson-md.jpg?itok=CAE2NRSH" alt="Customer">
+                        <div class="author-info">
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-title">Food Blogger</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The variety is incredible and every burger is a masterpiece. This is our family's go-to place!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&w=150&q=80" alt="Customer">
+                        <div class="author-info">
+                            <div class="author-name">Mike Davis</div>
+                            <div class="author-title">Family Man</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>123 Burger Street<br>Food District, City 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567<br>Mon-Sun 10AM-11PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>info@burgerhub.com<br>support@burgerhub.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Our Location</h2>
+                <p class="section-subtitle">Find us at our flagship restaurant for the ultimate dining experience</p>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.126768284106!2d-122.42067928468124!3d37.77851997975825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2d0d1d97%3A0x77ec51e8c6e1f9de!2sMarket%20St%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1587922786457!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-overlay">
+                    <div class="location-card">
+                        <h3>Burger Hub Flagship</h3>
+                        <p>123 Burger Street, Food District</p>
+                        <div class="location-hours">
+                            <strong>Hours:</strong>
+                            <span>Mon-Sun: 10AM - 11PM</span>
+                        </div>
+                        <a href="#" class="direction-btn">
+                            <i class="fas fa-directions"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hamburger"></i>
+                        <span>Burger Hub</span>
+                    </div>
+                    <p class="footer-description">Crafting the perfect burger experience with premium ingredients and exceptional service since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Online Ordering</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info-footer">
+                        <div class="contact-item-footer">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Burger Street, Food District</span>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@burgerhub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Burger Hub. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
