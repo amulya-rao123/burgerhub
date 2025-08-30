@@ -20,7 +20,7 @@
     --transition-slow: 0.5s ease;
 }
 
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -77,11 +77,10 @@ header {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* CORRECTED: This ensures logo is left, and links are right */
     align-items: center;
     padding: 0 2rem;
 }
